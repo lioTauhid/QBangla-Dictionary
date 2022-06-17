@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Gradient-Abstract-Shapes-Background-Purple.jpg</file>
+        <file>icons8_delete_48px.png</file>
+        <file>icons8_login_120px.png</file>
+        <file>icons8_ok_40px.png</file>
+        <file>icons8_return_40px.png</file>
+        <file>icons8_search_160px.png</file>
+        <file>icons8_contact_80px.png</file>
+        <file>icons8_flower_80px.png</file>
+        <file>icons8_info_80px.png</file>
+        <file>icons8_language_96px.png</file>
+        <file>icons8_broom_80px.png</file>
+        <file>icons8_paste_as_text_80px.png</file>
+        <file>icons8_lowercase_80px.png</file>
+    </qresource>
+</RCC>
