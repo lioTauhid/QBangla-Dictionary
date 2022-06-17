@@ -20,6 +20,8 @@ private slots:
 
     void on_wordSearch_editingFinished();
 
+    void on_actionThem_triggered();
+
 private:
     Ui::HomeWindow *ui;
 };

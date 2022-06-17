@@ -1,7 +1,6 @@
 #ifndef DBCONNECTION_H
 #define DBCONNECTION_H
 
-
 #include <QMessageBox>
 #include <QSqlDatabase>
 #include <qcoreapplication.h>

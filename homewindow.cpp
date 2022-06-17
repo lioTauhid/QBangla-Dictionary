@@ -1,8 +1,10 @@
-#include "homewindow.h"
 #include "ui_homewindow.h"
 #include "db_connetion.h"
 
+#include <QSettings>
 #include <QSqlRelationalTableModel>
+#include <dialogpick.h>
+#include <homewindow.h>
 
 QSqlTableModel* suggestionModel;
 
@@ -12,8 +14,12 @@ HomeWindow::HomeWindow(QWidget *parent)
 {
     ui->setupUi(this);
     this->setWindowTitle("Bijoy Ekush Bangla Dictionary");
-//    this->setStyleSheet("background-color: white;");
-//    ui->centralwidget->setStyleSheet("background-color: black;");
+    QSettings setting;
+    QString color=setting.value("themColor").toString();
+    if(color!="default"){
+        this->setStyleSheet("background-color: white;");
+        ui->centralwidget->setStyleSheet("background-color: '"+color+"';");
+    }
     createConnection();
 
     suggestionModel= new QSqlTableModel();
@@ -69,3 +75,17 @@ void HomeWindow::on_wordSearch_editingFinished()
     ui->exampleEt->setText(exampleModel->index(0,1).data().toString());
 
 }
+
+void HomeWindow::on_actionThem_triggered()
+{
+    DialogPick dd;
+    if(dd.exec()==QDialog::Accepted){
+        QSettings setting;
+        QString color=setting.value("themColor").toString();
+        if(color!="default"){
+//            this->setStyleSheet("background-color: white;");
+            ui->centralwidget->setStyleSheet("background-color: '"+color+"';");
+        }
+    }
+}
+
