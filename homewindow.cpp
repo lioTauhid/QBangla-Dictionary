@@ -1,10 +1,10 @@
 #include "ui_homewindow.h"
 #include "db_connetion.h"
-
+#include "QInputDialog"
 #include <QSettings>
 #include <QSqlRelationalTableModel>
-#include <dialogpick.h>
 #include <homewindow.h>
+ #include <QDesktopServices>
 
 QSqlTableModel* suggestionModel;
 
@@ -16,8 +16,9 @@ HomeWindow::HomeWindow(QWidget *parent)
     this->setWindowTitle("Bijoy Ekush Bangla Dictionary");
     QSettings setting;
     QString color=setting.value("themColor").toString();
-    if(color!="default"){
-        this->setStyleSheet("background-color: white;");
+    if(color!="Default"){
+        qDebug()<<color;
+        this->setStyleSheet("color:#0000fff;");
         ui->centralwidget->setStyleSheet("background-color: '"+color+"';");
     }
     createConnection();
@@ -78,14 +79,38 @@ void HomeWindow::on_wordSearch_editingFinished()
 
 void HomeWindow::on_actionThem_triggered()
 {
-    DialogPick dd;
-    if(dd.exec()==QDialog::Accepted){
-        QSettings setting;
-        QString color=setting.value("themColor").toString();
-        if(color!="default"){
-//            this->setStyleSheet("background-color: white;");
-            ui->centralwidget->setStyleSheet("background-color: '"+color+"';");
-        }
+    QStringList thems;
+    thems<<"Default"<<"White"<<"Dark"<<"Pink";
+    QString color = QInputDialog::getItem(NULL, tr("Choose Them"), tr("Them:"), thems);
+    QSettings setting;
+    setting.setValue("themColor", color);
+    if(color!="Default"){
+        ui->centralwidget->setStyleSheet("background-color: '"+color+"';");
+        return;
     }
+    ui->centralwidget->setStyleSheet("background-image: url(:/Gradient-Abstract-Shapes-Background-Purple.jpg);");
+
+}
+
+
+void HomeWindow::on_actionLanguage_triggered()
+{
+    QStringList langs;
+    langs<<"English"<<"বাংলা";
+    QString lang = QInputDialog::getItem(NULL, tr("Choose Language"), tr("Language:"), langs);
+    QSettings setting;
+    setting.setValue("lang", lang);
+}
+
+
+void HomeWindow::on_actionAbout_triggered()
+{
+
+}
+
+
+void HomeWindow::on_actionFont_install_triggered()
+{
+    QDesktopServices::openUrl(QUrl("Bangla.ttf", QUrl::TolerantMode));
 }
 

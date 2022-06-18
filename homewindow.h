@@ -22,6 +22,12 @@ private slots:
 
     void on_actionThem_triggered();
 
+    void on_actionLanguage_triggered();
+
+    void on_actionAbout_triggered();
+
+    void on_actionFont_install_triggered();
+
 private:
     Ui::HomeWindow *ui;
 };
