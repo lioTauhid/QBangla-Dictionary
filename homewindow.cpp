@@ -5,6 +5,7 @@
 #include <QSqlRelationalTableModel>
 #include <homewindow.h>
  #include <QDesktopServices>
+#include <aboutdialog.h>
 
 QSqlTableModel* suggestionModel;
 
@@ -105,7 +106,8 @@ void HomeWindow::on_actionLanguage_triggered()
 
 void HomeWindow::on_actionAbout_triggered()
 {
-
+    AboutDialog ab;
+    ab.exec();
 }
 
 
