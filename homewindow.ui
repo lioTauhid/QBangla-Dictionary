@@ -7,13 +7,25 @@
     <x>0</x>
     <y>0</y>
     <width>851</width>
-    <height>532</height>
+    <height>530</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>851</width>
+    <height>530</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>851</width>
+    <height>530</height>
+   </size>
   </property>
   <property name="sizeIncrement">
    <size>
-    <width>851</width>
-    <height>532</height>
+    <width>0</width>
+    <height>0</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -723,7 +735,7 @@ border-radius: 15px;</string>
      <normaloff>:/icons8_info_80px.png</normaloff>:/icons8_info_80px.png</iconset>
    </property>
    <property name="text">
-    <string>About</string>
+    <string>About Us</string>
    </property>
   </action>
   <action name="actionFont_install">
@@ -732,7 +744,7 @@ border-radius: 15px;</string>
      <normaloff>:/icons8_lowercase_80px.png</normaloff>:/icons8_lowercase_80px.png</iconset>
    </property>
    <property name="text">
-    <string>Font install</string>
+    <string>Install Font</string>
    </property>
   </action>
  </widget>

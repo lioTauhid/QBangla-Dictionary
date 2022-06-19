@@ -29,7 +29,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>About</string>
+   <string>About Us</string>
   </property>
   <property name="windowIcon">
    <iconset resource="icons.qrc">

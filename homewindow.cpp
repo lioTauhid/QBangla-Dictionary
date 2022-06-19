@@ -4,7 +4,7 @@
 #include <QSettings>
 #include <QSqlRelationalTableModel>
 #include <homewindow.h>
- #include <QDesktopServices>
+#include <QDesktopServices>
 #include <aboutdialog.h>
 #include <QMimeData>
 #include <QClipboard>
@@ -16,11 +16,9 @@ HomeWindow::HomeWindow(QWidget *parent)
     , ui(new Ui::HomeWindow)
 {
     ui->setupUi(this);
-    this->setWindowTitle("Bijoy Ekush Bangla Dictionary");
     QSettings setting;
     QString color=setting.value("themColor").toString();
     if(color!="Default"){
-        qDebug()<<color;
         this->setStyleSheet("color:#0000fff;");
         ui->centralwidget->setStyleSheet("background-color: '"+color+"';");
     }
@@ -82,7 +80,7 @@ void HomeWindow::on_actionThem_triggered()
 {
     QStringList thems;
     thems<<"Default"<<"White"<<"Dark"<<"Pink";
-    QString color = QInputDialog::getItem(NULL, tr("Choose Them"), tr("Them:"), thems);
+    QString color = QInputDialog::getItem(NULL, tr("Choose Theme"), tr("Theme:"), thems);
     QSettings setting;
     setting.setValue("themColor", color);
     if(color!="Default"){
@@ -100,6 +98,10 @@ void HomeWindow::on_actionLanguage_triggered()
     QString lang = QInputDialog::getItem(NULL, tr("Choose Language"), tr("Language:"), langs);
     QSettings setting;
     setting.setValue("lang", lang);
+    QMessageBox::information(this, "Warning!", "Restart app menually, to change language.", QMessageBox::Ok);
+    QString lang2=setting.value("lang").toString();
+    qDebug()<<lang2;
+
 }
 
 
