@@ -10,8 +10,18 @@
     <height>532</height>
    </rect>
   </property>
+  <property name="sizeIncrement">
+   <size>
+    <width>851</width>
+    <height>532</height>
+   </size>
+  </property>
   <property name="windowTitle">
-   <string>HomeWindow</string>
+   <string>BijoyEkush Bangla Dictionary</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="icons.qrc">
+    <normaloff>:/logo.ico</normaloff>:/logo.ico</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true"/>
@@ -726,6 +736,17 @@ border-radius: 15px;</string>
    </property>
   </action>
  </widget>
+ <tabstops>
+  <tabstop>wordSearch</tabstop>
+  <tabstop>searchBtn</tabstop>
+  <tabstop>pastBtn</tabstop>
+  <tabstop>clearBtn</tabstop>
+  <tabstop>tableSuggestion</tabstop>
+  <tabstop>antoEt</tabstop>
+  <tabstop>meaningEt</tabstop>
+  <tabstop>synoEt</tabstop>
+  <tabstop>exampleEt</tabstop>
+ </tabstops>
  <resources>
   <include location="icons.qrc"/>
  </resources>

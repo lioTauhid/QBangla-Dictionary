@@ -28,6 +28,14 @@ private slots:
 
     void on_actionFont_install_triggered();
 
+    void on_actionExit_triggered();
+
+    void on_pastBtn_clicked();
+
+    void on_searchBtn_clicked();
+
+    void on_clearBtn_clicked();
+
 private:
     Ui::HomeWindow *ui;
 };

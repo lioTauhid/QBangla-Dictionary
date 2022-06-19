@@ -6,6 +6,8 @@
 #include <homewindow.h>
  #include <QDesktopServices>
 #include <aboutdialog.h>
+#include <QMimeData>
+#include <QClipboard>
 
 QSqlTableModel* suggestionModel;
 
@@ -27,7 +29,6 @@ HomeWindow::HomeWindow(QWidget *parent)
     suggestionModel= new QSqlTableModel();
     suggestionModel->setTable("EnBnAnt1");
     suggestionModel->select();
-
     ui->tableSuggestion->setModel(suggestionModel);
     ui->tableSuggestion->hideColumn(0);
     ui->tableSuggestion->hideColumn(2);
@@ -41,7 +42,7 @@ HomeWindow::~HomeWindow()
 
 void HomeWindow::on_wordSearch_textEdited(const QString &arg1)
 {
-    suggestionModel->setFilter("EnBnAnt1.word  LIKE '"+arg1+"%'");
+    suggestionModel->setFilter("EnBnAnt1.word  LIKE '"+arg1+"%' LIMIT 100");
 }
 
 void HomeWindow::on_wordSearch_editingFinished()
@@ -75,7 +76,6 @@ void HomeWindow::on_wordSearch_editingFinished()
 
     exampleModel->setFilter("Examples.word LIKE '"+ui->wordSearch->text()+"%'");
     ui->exampleEt->setText(exampleModel->index(0,1).data().toString());
-
 }
 
 void HomeWindow::on_actionThem_triggered()
@@ -90,7 +90,6 @@ void HomeWindow::on_actionThem_triggered()
         return;
     }
     ui->centralwidget->setStyleSheet("background-image: url(:/Gradient-Abstract-Shapes-Background-Purple.jpg);");
-
 }
 
 
@@ -114,5 +113,34 @@ void HomeWindow::on_actionAbout_triggered()
 void HomeWindow::on_actionFont_install_triggered()
 {
     QDesktopServices::openUrl(QUrl("Bangla.ttf", QUrl::TolerantMode));
+}
+
+
+void HomeWindow::on_actionExit_triggered()
+{
+    this->close();
+}
+
+
+void HomeWindow::on_pastBtn_clicked()
+{
+    const QClipboard *clipboard = QApplication::clipboard();
+    const QMimeData *mimeData = clipboard->mimeData();
+    ui->wordSearch->setText(mimeData->text());
+}
+
+
+void HomeWindow::on_searchBtn_clicked()
+{
+    on_wordSearch_editingFinished();
+}
+
+
+void HomeWindow::on_clearBtn_clicked()
+{
+    foreach(QTextEdit *widget, this->findChildren<QTextEdit*>()) {
+        widget->clear();
+    }
+    ui->wordSearch->setText("");
 }
 

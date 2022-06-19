@@ -13,5 +13,6 @@
         <file>icons8_broom_80px.png</file>
         <file>icons8_paste_as_text_80px.png</file>
         <file>icons8_lowercase_80px.png</file>
+        <file>logo.ico</file>
     </qresource>
 </RCC>
