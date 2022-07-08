@@ -73,7 +73,8 @@ color:#0000ff;
     </property>
     <property name="font">
      <font>
-      <pointsize>11</pointsize>
+      <family>Kalpurush</family>
+      <pointsize>12</pointsize>
      </font>
     </property>
     <property name="styleSheet">
@@ -136,8 +137,8 @@ QPushButton:pressed {
     </property>
     <property name="font">
      <font>
-      <family>MS Shell Dlg 2</family>
-      <pointsize>11</pointsize>
+      <family>Kalpurush</family>
+      <pointsize>12</pointsize>
      </font>
     </property>
     <property name="styleSheet">
@@ -199,7 +200,8 @@ QPushButton:pressed {
     </property>
     <property name="font">
      <font>
-      <pointsize>11</pointsize>
+      <family>Kalpurush</family>
+      <pointsize>12</pointsize>
      </font>
     </property>
     <property name="styleSheet">
@@ -249,8 +251,8 @@ radius: 1.35, stop: 0 #fff, stop: 1 #e7e7e7);
     </property>
     <property name="font">
      <font>
-      <family>MS Shell Dlg 2</family>
-      <pointsize>11</pointsize>
+      <family>Kalpurush</family>
+      <pointsize>12</pointsize>
      </font>
     </property>
     <property name="styleSheet">
@@ -315,7 +317,7 @@ border-radius: 15px;</string>
      </property>
      <property name="font">
       <font>
-       <family>MS Shell Dlg 2</family>
+       <family>Kalpurush</family>
        <pointsize>14</pointsize>
        <weight>75</weight>
        <bold>true</bold>
@@ -374,7 +376,7 @@ p, li { white-space: pre-wrap; }
      </property>
      <property name="font">
       <font>
-       <family>MS Shell Dlg 2</family>
+       <family>Kalpurush</family>
        <pointsize>14</pointsize>
        <weight>75</weight>
        <bold>true</bold>
@@ -452,7 +454,7 @@ border-radius: 15px;</string>
      </property>
      <property name="font">
       <font>
-       <family>MS Shell Dlg 2</family>
+       <family>Kalpurush</family>
        <pointsize>14</pointsize>
        <weight>75</weight>
        <bold>true</bold>
@@ -485,7 +487,7 @@ background-color:#0000ffff;
      </property>
      <property name="font">
       <font>
-       <family>MS Shell Dlg 2</family>
+       <family>Kalpurush</family>
        <pointsize>14</pointsize>
        <weight>75</weight>
        <bold>true</bold>
@@ -664,7 +666,7 @@ border-radius: 15px;</string>
      <x>0</x>
      <y>0</y>
      <width>851</width>
-     <height>22</height>
+     <height>20</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuAbout">
@@ -710,6 +712,11 @@ border-radius: 15px;</string>
    <property name="text">
     <string>Exit</string>
    </property>
+   <property name="font">
+    <font>
+     <family>Kalpurush</family>
+    </font>
+   </property>
   </action>
   <action name="actionThem">
    <property name="icon">
@@ -718,6 +725,11 @@ border-radius: 15px;</string>
    </property>
    <property name="text">
     <string>Theme</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Kalpurush</family>
+    </font>
    </property>
   </action>
   <action name="actionLanguage">
@@ -728,6 +740,11 @@ border-radius: 15px;</string>
    <property name="text">
     <string>Language</string>
    </property>
+   <property name="font">
+    <font>
+     <family>Kalpurush</family>
+    </font>
+   </property>
   </action>
   <action name="actionAbout">
    <property name="icon">
@@ -737,6 +754,11 @@ border-radius: 15px;</string>
    <property name="text">
     <string>About Us</string>
    </property>
+   <property name="font">
+    <font>
+     <family>Kalpurush</family>
+    </font>
+   </property>
   </action>
   <action name="actionFont_install">
    <property name="icon">
@@ -745,6 +767,11 @@ border-radius: 15px;</string>
    </property>
    <property name="text">
     <string>Install Font</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Kalpurush</family>
+    </font>
    </property>
   </action>
  </widget>

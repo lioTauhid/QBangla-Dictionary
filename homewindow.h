@@ -36,6 +36,8 @@ private slots:
 
     void on_clearBtn_clicked();
 
+    void on_tableSuggestion_clicked(const QModelIndex &index);
+
 private:
     Ui::HomeWindow *ui;
 };

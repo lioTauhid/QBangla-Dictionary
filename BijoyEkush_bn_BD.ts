@@ -141,22 +141,22 @@ p, li { white-space: pre-wrap; }
         <translation type="vanished">থিম</translation>
     </message>
     <message>
-        <location filename="homewindow.cpp" line="84"/>
+        <location filename="homewindow.cpp" line="83"/>
         <source>Choose Theme</source>
         <translation>থিম নির্বাচন করুন</translation>
     </message>
     <message>
-        <location filename="homewindow.cpp" line="84"/>
+        <location filename="homewindow.cpp" line="83"/>
         <source>Theme:</source>
         <translation>থিম</translation>
     </message>
     <message>
-        <location filename="homewindow.cpp" line="99"/>
+        <location filename="homewindow.cpp" line="98"/>
         <source>Choose Language</source>
         <translation>ভাষা নির্বাচন করুন</translation>
     </message>
     <message>
-        <location filename="homewindow.cpp" line="99"/>
+        <location filename="homewindow.cpp" line="98"/>
         <source>Language:</source>
         <translation>ভাষা:</translation>
     </message>

@@ -40,7 +40,7 @@ HomeWindow::~HomeWindow()
 
 void HomeWindow::on_wordSearch_textEdited(const QString &arg1)
 {
-    suggestionModel->setFilter("EnBnAnt1.word  LIKE '"+arg1+"%' LIMIT 100");
+    suggestionModel->setFilter("EnBnAnt1.word  LIKE '"+arg1+"%' LIMIT 50");
 }
 
 void HomeWindow::on_wordSearch_editingFinished()
@@ -48,18 +48,19 @@ void HomeWindow::on_wordSearch_editingFinished()
     QSqlRelationalTableModel *model=new QSqlRelationalTableModel();
     QSqlRelationalTableModel *model2=new QSqlRelationalTableModel();
     QSqlTableModel *exampleModel= new QSqlTableModel();
+    QString word = ui->wordSearch->text();
 
     exampleModel= new QSqlTableModel();
     exampleModel->setTable("Examples");
     exampleModel->select();
 
     model->setTable("BnSynPos1");
-    model->setFilter("BnSynPos1.pron = '"+ui->wordSearch->text()+"'");
+    model->setFilter("BnSynPos1.pron = '"+word.toLower()+"'");
     model->setRelation(0, QSqlRelation("BnSynPos2", "id", "meaning"));
     model->select();
 
     model2->setTable("EnBnAnt1");
-    model2->setFilter("EnBnAnt1.word LIKE '"+ui->wordSearch->text()+"'");
+    model2->setFilter("EnBnAnt1.word LIKE '"+word+"'");
     model2->setRelation(0, QSqlRelation("EnBnAnt2", "id", "meaning"));
     model2->select();
 
@@ -72,7 +73,7 @@ void HomeWindow::on_wordSearch_editingFinished()
     }
     ui->antoEt->setText(model2->index(0,2).data().toString());
 
-    exampleModel->setFilter("Examples.word LIKE '"+ui->wordSearch->text()+"%'");
+    exampleModel->setFilter("Examples.word LIKE '"+word.toUpper()+"%'");
     ui->exampleEt->setText(exampleModel->index(0,1).data().toString());
 }
 
@@ -100,8 +101,6 @@ void HomeWindow::on_actionLanguage_triggered()
     setting.setValue("lang", lang);
     QMessageBox::information(this, "Warning!", "Restart app menually, to change language.", QMessageBox::Ok);
     QString lang2=setting.value("lang").toString();
-    qDebug()<<lang2;
-
 }
 
 
@@ -114,7 +113,7 @@ void HomeWindow::on_actionAbout_triggered()
 
 void HomeWindow::on_actionFont_install_triggered()
 {
-    QDesktopServices::openUrl(QUrl("Bangla.ttf", QUrl::TolerantMode));
+    QDesktopServices::openUrl(QUrl("kalpurush.ttf", QUrl::TolerantMode));
 }
 
 
@@ -146,3 +145,9 @@ void HomeWindow::on_clearBtn_clicked()
     ui->wordSearch->setText("");
 }
 
+
+void HomeWindow::on_tableSuggestion_clicked(const QModelIndex &index)
+{
+    ui->wordSearch->setText(ui->tableSuggestion->model()->data(index).toString());
+    on_wordSearch_editingFinished();
+}
