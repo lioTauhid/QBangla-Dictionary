@@ -100,7 +100,6 @@ void HomeWindow::on_actionLanguage_triggered()
     QSettings setting;
     setting.setValue("lang", lang);
     QMessageBox::information(this, "Warning!", "Restart app menually, to change language.", QMessageBox::Ok);
-    QString lang2=setting.value("lang").toString();
 }
 
 

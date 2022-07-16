@@ -1,7 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=WaterMonitoringSystem
-Comment=This is an application that measures levels in the tank and shows warning signals as traffic lights
-Exec=WaterMonitoringSystem-x86_64.AppImage
-Icon=default
-
