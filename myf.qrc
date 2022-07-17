@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/new">
+        <file>dictionary.db</file>
+        <file>student_PNG127.png</file>
+        <file>student-s.png</file>
+        <file>Capture.PNG</file>
+        <file>2logo.jpg</file>
+        <file>ICON1.png</file>
+    </qresource>
+</RCC>
