@@ -18,9 +18,11 @@ HomeWindow::HomeWindow(QWidget *parent)
     ui->setupUi(this);
     QSettings setting;
     QString color=setting.value("themColor").toString();
-    if(color!="Default"){
-        this->setStyleSheet("color:#0000fff;");
-        ui->centralwidget->setStyleSheet("background-color: '"+color+"';");
+    if(color!=""){
+        if(color!="Default"){
+            this->setStyleSheet("color:#0000fff;");
+            ui->centralwidget->setStyleSheet("background-color: '"+color+"';");
+        }
     }
     createConnection();
 
