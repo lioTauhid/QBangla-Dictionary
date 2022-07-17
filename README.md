@@ -3,7 +3,7 @@
   <br>
   <a><img src="https://raw.githubusercontent.com/lioTauhid/BijoyEkush-Bangla-Dictionary/main/logo.png" alt="Markdownify" width="200"></a>
   <br>
-  Markdownify
+  BijoyEkush Bangla Dictionary
   <br>
 </h1>
 
@@ -37,7 +37,6 @@
 * Large word based but lite
 * Change Theme and Language
 * Text to Speech (Only availabe for Android)
-* [KaTeX](https://khan.github.io/KaTeX/) Support
 * Dark/Light theme
 * Cross platform
   - Windows.
@@ -48,7 +47,8 @@
 
 ## How To Use
 
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Qt](https://nodejs.org/en/download/) installed on your computer. From your command line:
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Qt](https://www.qt.io/) installed on your computer. \
+From your command line:
 
 ```bash
 # Clone this repository
@@ -57,25 +57,22 @@ $ git clone https://github.com/lioTauhid/BijoyEkush-Bangla-Dictionary
 
 ## Download
 
-You can [Download](https://github.com/amitmerchant1990/electron-markdownify/releases/tag/v1.2.0) the latest installable version of Markdownify for Windows, Linux and Android.
+You can [Download](https://github.com/amitmerchant1990/electron-markdownify/releases/tag/v1.2.0) the latest installable version of Markdownify for Windows and Linux.\
+For Android, download it from [Play Store](https://play.google.com/store/apps/details?id=lio.tauhid.bijoyekush)
 
 ## Emailware
 
-Markdownify is an [emailware](https://en.wiktionary.org/wiki/emailware). Meaning, if you liked using this app or it has helped you in any way, I'd like you send me an email at <bullredeyes@gmail.com> about anything you'd want to say about this software. I'd really appreciate it!
+BijoyEkush is an [emailware](https://en.wiktionary.org/wiki/emailware). Meaning, if you liked using this app or it has helped you in any way, I'd like you send me an email at <liotauhid@gmail.com> about anything you'd want to say about this software. I'd really appreciate it!
 
 ## Credits
 
 This software uses the following package and resources:
 
-- [Qt](http://electron.atom.io/)
-- [AppImage](https://nodejs.org/)
-- [Sqlite](https://github.com/chjj/marked)
-- [DB browser](http://showdownjs.github.io/showdown/)
-- [Icon8](http://codemirror.net/)
-
-## Related
-
-[markdownify-web](https://github.com/amitmerchant1990/markdownify-web) - Web version of Markdownify
+- [Qt](https://www.qt.io/)
+- [AppImage](https://github.com/probonopd/linuxdeployqt)
+- [Sqlite](https://www.sqlite.org/index.html)
+- [DB browser](https://sqlitebrowser.org/)
+- [Icon8](https://icons8.com/)
 
 ## License
 
@@ -83,6 +80,6 @@ This software uses the following package and resources:
 
 ---
 
-> GitHub [@amitmerchant1990](https://github.com/amitmerchant1990) &nbsp;&middot;&nbsp;
-> LinkedIn [@amit_merchant](https://twitter.com/amit_merchant)
+> GitHub [@amitmerchant1990](https://github.com/lioTauhid) &nbsp;&middot;&nbsp;
+> LinkedIn [@amit_merchant](https://www.linkedin.com/in/md-tauhid-5861b8140/)
 
