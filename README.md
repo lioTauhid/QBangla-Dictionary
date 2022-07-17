@@ -7,7 +7,7 @@
   <br>
 </h1>
 
-<h4 align="center">BijoyEkush Dictionary (বিজয় একুশ ডিকশনারী) is a cross-platform bangle dictionary that built on top of <a href="http://electron.atom.io" target="_blank">Electron</a>.</h4>
+<h4 align="center">BijoyEkush Dictionary (বিজয় একুশ ডিকশনারী) is a cross-platform bangle dictionary that built on top of <a href="https://www.qt.io/" target="_blank">Qt</a>.</h4>
 <div align="center">
 <a href="https://github.com/lioTauhid/BijoyEkush-Bangla-Dictionary/stargazers"><img src="https://img.shields.io/github/stars/lioTauhid/BijoyEkush-Bangla-Dictionary" alt="Stars Badge"/></a>
 <a href="https://github.com/lioTauhid/BijoyEkush-Bangla-Dictionary/network/members"><img src="https://img.shields.io/github/forks/lioTauhid/BijoyEkush-Bangla-Dictionary" alt="Forks Badge"/></a>
@@ -80,6 +80,6 @@ This software uses the following package and resources:
 
 ---
 
-> GitHub [@amitmerchant1990](https://github.com/lioTauhid) &nbsp;&middot;&nbsp;
-> LinkedIn [@amit_merchant](https://www.linkedin.com/in/md-tauhid-5861b8140/)
+> GitHub [@lioTauhid](https://github.com/lioTauhid) &nbsp;&middot;&nbsp;
+> LinkedIn [@Md Tauhid](https://www.linkedin.com/in/md-tauhid-5861b8140/)
 
