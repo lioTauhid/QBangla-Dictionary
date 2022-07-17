@@ -4,7 +4,6 @@
 #include <QMessageBox>
 #include <QSqlDatabase>
 #include <qcoreapplication.h>
-#include <qdebug.h>
 
 
 static bool createConnection(){

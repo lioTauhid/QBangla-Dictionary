@@ -114,7 +114,7 @@ void HomeWindow::on_actionAbout_triggered()
 
 void HomeWindow::on_actionFont_install_triggered()
 {
-    QDesktopServices::openUrl(QUrl("kalpurush.ttf", QUrl::TolerantMode));
+    QDesktopServices::openUrl(QUrl(QCoreApplication::applicationDirPath()+"/kalpurush.ttf", QUrl::TolerantMode));
 }
 
 
