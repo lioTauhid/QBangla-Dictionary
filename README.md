@@ -9,12 +9,12 @@
 
 <h4 align="center">A minimal Markdown Editor desktop app built on top of <a href="http://electron.atom.io" target="_blank">Electron</a>.</h4>
 <div align="center">
-<a href="https://github.com/lioTauhid/BijoyEkush-Bangla-Dictionary/stargazers"><img src="https://img.shields.io/github/stars/elangosundar/awesome-README-templates" alt="Stars Badge"/></a>
-<a href="https://github.com/elangosundar/awesome-README-templates/network/members"><img src="https://img.shields.io/github/forks/elangosundar/awesome-README-templates" alt="Forks Badge"/></a>
-<a href="https://github.com/elangosundar/awesome-README-templates/pulls"><img src="https://img.shields.io/github/issues-pr/elangosundar/awesome-README-templates" alt="Pull Requests Badge"/></a>
-<a href="https://github.com/elangosundar/awesome-README-templates/issues"><img src="https://img.shields.io/github/issues/elangosundar/awesome-README-templates" alt="Issues Badge"/></a>
-<a href="https://github.com/elangosundar/awesome-README-templates/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/elangosundar/awesome-README-templates?color=2b9348"></a>
-<a href="https://github.com/elangosundar/awesome-README-templates/blob/master/LICENSE"><img src="https://img.shields.io/github/license/elangosundar/awesome-README-templates?color=2b9348" alt="License Badge"/></a>
+<a href="https://github.com/lioTauhid/BijoyEkush-Bangla-Dictionary/stargazers"><img src="https://img.shields.io/github/stars/lioTauhid/BijoyEkush-Bangla-Dictionary" alt="Stars Badge"/></a>
+<a href="https://github.com/lioTauhid/BijoyEkush-Bangla-Dictionary/network/members"><img src="https://img.shields.io/github/forks/lioTauhid/BijoyEkush-Bangla-Dictionary" alt="Forks Badge"/></a>
+<a href="https://github.com/lioTauhid/BijoyEkush-Bangla-Dictionary/pulls"><img src="https://img.shields.io/github/issues-pr/lioTauhid/BijoyEkush-Bangla-Dictionary" alt="Pull Requests Badge"/></a>
+<a href="https://github.com/lioTauhid/BijoyEkush-Bangla-Dictionary/issues"><img src="https://img.shields.io/github/issues/lioTauhid/BijoyEkush-Bangla-Dictionary" alt="Issues Badge"/></a>
+<a href="https://github.com/lioTauhid/BijoyEkush-Bangla-Dictionary/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/lioTauhid/BijoyEkush-Bangla-Dictionary?color=2b9348"></a>
+<a href="https://github.com/lioTauhid/BijoyEkush-Bangla-Dictionary/blob/master/LICENSE"><img src="https://img.shields.io/github/license/lioTauhid/BijoyEkush-Bangla-Dictionary?color=2b9348" alt="License Badge"/></a>
 </div>
 <p align="center">
   <a href="#key-features">Key Features</a> •
