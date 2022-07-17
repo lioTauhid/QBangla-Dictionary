@@ -7,7 +7,7 @@
   <br>
 </h1>
 
-<h4 align="center">A minimal Markdown Editor desktop app built on top of <a href="http://electron.atom.io" target="_blank">Electron</a>.</h4>
+<h4 align="center">BijoyEkush Dictionary (বিজয় একুশ ডিকশনারী) is a cross-platform bangle dictionary that provides many features that built on top of <a href="http://electron.atom.io" target="_blank">Electron</a>.</h4>
 <div align="center">
 <a href="https://github.com/lioTauhid/BijoyEkush-Bangla-Dictionary/stargazers"><img src="https://img.shields.io/github/stars/lioTauhid/BijoyEkush-Bangla-Dictionary" alt="Stars Badge"/></a>
 <a href="https://github.com/lioTauhid/BijoyEkush-Bangla-Dictionary/network/members"><img src="https://img.shields.io/github/forks/lioTauhid/BijoyEkush-Bangla-Dictionary" alt="Forks Badge"/></a>
