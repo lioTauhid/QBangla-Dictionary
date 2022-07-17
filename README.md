@@ -41,8 +41,8 @@
 * Cross platform
   - Windows.
   - Linux.
-  - Android
-  - MacOS, IOS (Build from source)
+  - Android.
+  - MacOS, IOS (Build from source).
 
 
 ## How To Use
