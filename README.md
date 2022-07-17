@@ -1,7 +1,7 @@
 
 <h1 align="center">
   <br>
-  <a><img src="https://raw.githubusercontent.com/lioTauhid/BijoyEkush-Bangla-Dictionary/main/logo.png" alt="Markdownify" width="200"></a>
+  <a><img src="https://raw.githubusercontent.com/lioTauhid/BijoyEkush-Bangla-Dictionary/main/external_assets/logo.png" alt="Markdownify" width="200"></a>
   <br>
   BijoyEkush Bangla Dictionary
   <br>
@@ -26,7 +26,7 @@
 </p>
 <h1 align="center">
   <br>
-  <a><img src="https://raw.githubusercontent.com/lioTauhid/BijoyEkush-Bangla-Dictionary/main/Screenshot.png"></a>
+  <a><img src="https://raw.githubusercontent.com/lioTauhid/BijoyEkush-Bangla-Dictionary/main/external_assets/Screenshot.png"></a>
   <br>
   <br>
 </h1>
