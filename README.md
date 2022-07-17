@@ -33,6 +33,7 @@
 </p>
 
 ![screenshot](https://raw.githubusercontent.com/lioTauhid/BijoyEkush-Bangla-Dictionary/main/Screenshot.png)
+<img src="https://raw.githubusercontent.com/lioTauhid/BijoyEkush-Bangla-Dictionary/main/logo.png" alt="Markdownify" align="center">
 
 ## Key Features
 
