@@ -23,7 +23,8 @@
   <br>
   <br>
 </h1>
-## Key Features
+
+## How To Use
 
 * LivePreview - Make changes, See changes
   - Instantly see what your Markdown documents look like in HTML as you create them.
