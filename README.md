@@ -33,9 +33,8 @@
 </p>
 <h1 align="center">
   <br>
-  <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://raw.githubusercontent.com/lioTauhid/BijoyEkush-Bangla-Dictionary/main/logo.png" alt="Markdownify" width="200"></a>
+  <a><img src="https://raw.githubusercontent.com/lioTauhid/BijoyEkush-Bangla-Dictionary/main/Screenshot.png"></a>
   <br>
-  Markdownify
   <br>
 </h1>
 ![screenshot](https://raw.githubusercontent.com/lioTauhid/BijoyEkush-Bangla-Dictionary/main/Screenshot.png)
