@@ -57,7 +57,7 @@ $ git clone https://github.com/lioTauhid/BijoyEkush-Bangla-Dictionary
 
 ## Download
 
-You can [Download](https://github.com/amitmerchant1990/electron-markdownify/releases/tag/v1.2.0) the latest installable version of Markdownify for Windows and Linux.\
+You can [Download](https://github.com/lioTauhid/BijoyEkush-Bangla-Dictionary/releases) the latest installable version of Markdownify for Windows and Linux.\
 For Android, download it from [Play Store](https://play.google.com/store/apps/details?id=lio.tauhid.bijoyekush)
 
 ## Emailware
