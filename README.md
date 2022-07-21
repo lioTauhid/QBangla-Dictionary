@@ -3,11 +3,11 @@
   <br>
   <a><img src="https://raw.githubusercontent.com/lioTauhid/BijoyEkush-Bangla-Dictionary/main/external_assets/logo.png" alt="Markdownify" width="200"></a>
   <br>
-  BijoyEkush Bangla Dictionary
+  QBangla Dictionary
   <br>
 </h1>
 
-<h4 align="center">BijoyEkush Dictionary (বিজয় একুশ ডিকশনারী) is a cross-platform bangle dictionary that built on top of <a href="https://www.qt.io/" target="_blank">Qt</a>.</h4>
+<h4 align="center">QBangla Dictionary (বিজয় একুশ ডিকশনারী) is a cross-platform bangle dictionary that built on top of <a href="https://www.qt.io/" target="_blank">Qt</a>.</h4>
 <div align="center">
 <a href="https://github.com/lioTauhid/BijoyEkush-Bangla-Dictionary/stargazers"><img src="https://img.shields.io/github/stars/lioTauhid/BijoyEkush-Bangla-Dictionary" alt="Stars Badge"/></a>
 <a href="https://github.com/lioTauhid/BijoyEkush-Bangla-Dictionary/network/members"><img src="https://img.shields.io/github/forks/lioTauhid/BijoyEkush-Bangla-Dictionary" alt="Forks Badge"/></a>
