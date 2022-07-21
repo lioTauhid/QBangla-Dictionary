@@ -1,15 +1,15 @@
 <RCC>
     <qresource prefix="/">
-        <file>Gradient-Abstract-Shapes-Background-Purple.jpg</file>
-        <file>icons8_delete_48px.png</file>
-        <file>icons8_search_160px.png</file>
-        <file>icons8_flower_80px.png</file>
-        <file>icons8_info_80px.png</file>
-        <file>icons8_language_96px.png</file>
-        <file>icons8_broom_80px.png</file>
-        <file>icons8_paste_as_text_80px.png</file>
-        <file>icons8_lowercase_80px.png</file>
-        <file>logo.ico</file>
         <file>BijoyEkush_bn_BD.qm</file>
+        <file>assets/Gradient-Abstract-Shapes-Background-Purple.jpg</file>
+        <file>assets/icons8_delete_48px.png</file>
+        <file>assets/icons8_search_160px.png</file>
+        <file>assets/icons8_flower_80px.png</file>
+        <file>assets/icons8_language_96px.png</file>
+        <file>assets/icons8_paste_as_text_80px.png</file>
+        <file>assets/logo.ico</file>
+        <file>assets/icons8_lowercase_80px.png</file>
+        <file>assets/icons8_broom_80px.png</file>
+        <file>assets/icons8_info_80px.png</file>
     </qresource>
 </RCC>

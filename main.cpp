@@ -6,11 +6,11 @@
 
 int main(int argc, char *argv[])
 {
-    QApplication::setApplicationDisplayName("BijoyEkush Bangla Dictionary");
-    QApplication::setApplicationName("BijoyEkush Bangla Dictionary");
+    QApplication::setApplicationDisplayName("QBangla Dictionary");
+    QApplication::setApplicationName("QBangla Dictionary");
     QApplication::setOrganizationDomain("liotauhid@gmail.com");
-    QApplication::setOrganizationName("BijoyEkush");
-    QApplication::setApplicationVersion("2.0");
+    QApplication::setOrganizationName("QBangla");
+    QApplication::setApplicationVersion("2.1.0");
     QApplication a(argc, argv);
 
     QTranslator t;
