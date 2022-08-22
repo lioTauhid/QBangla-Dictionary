@@ -8,6 +8,10 @@
 #include <aboutdialog.h>
 #include <QMimeData>
 #include <QClipboard>
+#include <QDebug>
+#include <QJsonDocument>
+#include <QJsonArray>
+#include <QJsonObject>
 
 QSqlTableModel* suggestionModel;
 
@@ -27,11 +31,10 @@ HomeWindow::HomeWindow(QWidget *parent)
     createConnection();
 
     suggestionModel= new QSqlTableModel();
-    suggestionModel->setTable("EnBnAnt1");
+    suggestionModel->setTable("english");
     suggestionModel->select();
     ui->tableSuggestion->setModel(suggestionModel);
     ui->tableSuggestion->hideColumn(0);
-    ui->tableSuggestion->hideColumn(2);
 }
 
 HomeWindow::~HomeWindow()
@@ -42,42 +45,64 @@ HomeWindow::~HomeWindow()
 
 void HomeWindow::on_wordSearch_textEdited(const QString &arg1)
 {
-    suggestionModel->setFilter("EnBnAnt1.word  LIKE '"+arg1+"%' LIMIT 50");
+    suggestionModel->setFilter("english.word  LIKE '"+arg1+"%' LIMIT 50");
 }
 
 void HomeWindow::on_wordSearch_editingFinished()
 {
-    QSqlRelationalTableModel *model=new QSqlRelationalTableModel();
-    QSqlRelationalTableModel *model2=new QSqlRelationalTableModel();
-    QSqlTableModel *exampleModel= new QSqlTableModel();
+    QSqlTableModel *model=new QSqlTableModel();
     QString word = ui->wordSearch->text();
+    if (word.isEmpty()){
+        return;
+    }
 
-    exampleModel= new QSqlTableModel();
-    exampleModel->setTable("Examples");
-    exampleModel->select();
-
-    model->setTable("BnSynPos1");
-    model->setFilter("BnSynPos1.pron = '"+word.toLower()+"'");
-    model->setRelation(0, QSqlRelation("BnSynPos2", "id", "meaning"));
+    model->setTable("bangla");
+    model->setFilter("serial IN (SELECT serial FROM english WHERE word LIKE '"+word+"')");
     model->select();
 
-    model2->setTable("EnBnAnt1");
-    model2->setFilter("EnBnAnt1.word LIKE '"+word+"'");
-    model2->setRelation(0, QSqlRelation("EnBnAnt2", "id", "meaning"));
-    model2->select();
+    ui->meaningEt->setText(model->index(0,1).data().toString());
+    ui->antoEt->setText(model->index(0,4).data().toString());
+    ui->definEt->setText(model->index(0,5).data().toString());
+    ui->exampleEt->setText(model->index(0,6).data().toString());
 
-    if(model->rowCount()==0){
-        ui->meaningEt->setText(model2->index(0,0).data().toString());
+    QSqlTableModel *extraModel=new QSqlTableModel();
+    QString tt= "[[3,8,9],[2,10],[4,11]]";
 
-    }else {
-        ui->meaningEt->setText(model->index(0,0).data().toString());
-        ui->synoEt->setText(model->index(0,2).data().toString());
+    QJsonDocument doc = QJsonDocument::fromJson(model->index(0,2).data().toString().toUtf8());
+    QJsonArray obj = doc.array();
+    QString qq = "";
+    for(QJsonValueRef s : obj) {
+        int id = s.toArray().at(0).toInt();
+        QString type = "Noun";
+        extraModel->setTable("bn_en");
+        for (int i=1;i<s.toArray().count();i++) {
+            double j = s.toArray()[i].toDouble();
+            qq.append( ","+QString::number(j));
+        }
     }
-    ui->antoEt->setText(model2->index(0,2).data().toString());
+    qDebug()<<qq;
 
-    exampleModel->setFilter("Examples.word LIKE '"+word.toUpper()+"%'");
-    ui->exampleEt->setText(exampleModel->index(0,1).data().toString());
+    extraModel->setFilter("serial IN ("+qq.remove(0,1)+")");
+    extraModel->select();
+    ui->posTable->setModel(extraModel);
+    ui->posTable->hideColumn(0);
+
+//    qDebug()<<extraModel->index(0,2).data().toString();
+
+//    qDebug() << obj[0].toArray()[0];
+//    qDebug()<<ex;
+
+//    ui->synoEt->setText(model->index(0,2).data().toString());
+//    ui->posEt->setText(model->index(0,2).data().toString());
 }
+
+
+void HomeWindow::on_tableSuggestion_clicked(const QModelIndex &index)
+{
+    ui->wordSearch->setText(ui->tableSuggestion->model()->data(index).toString());
+    on_wordSearch_editingFinished();
+}
+
 
 void HomeWindow::on_actionThem_triggered()
 {
@@ -144,11 +169,4 @@ void HomeWindow::on_clearBtn_clicked()
         widget->clear();
     }
     ui->wordSearch->setText("");
-}
-
-
-void HomeWindow::on_tableSuggestion_clicked(const QModelIndex &index)
-{
-    ui->wordSearch->setText(ui->tableSuggestion->model()->data(index).toString());
-    on_wordSearch_editingFinished();
 }
