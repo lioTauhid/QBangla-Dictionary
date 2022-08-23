@@ -11,5 +11,6 @@
         <file>assets/icons8_lowercase_80px.png</file>
         <file>assets/icons8_broom_80px.png</file>
         <file>assets/icons8_info_80px.png</file>
+        <file>assets/icons8_voice_80px.png</file>
     </qresource>
 </RCC>

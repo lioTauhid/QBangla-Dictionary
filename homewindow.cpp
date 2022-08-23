@@ -11,7 +11,8 @@
 #include <QDebug>
 #include <QJsonDocument>
 #include <QJsonArray>
-#include <QJsonObject>
+#include <QStandardItemModel>
+
 
 QSqlTableModel* suggestionModel;
 
@@ -35,6 +36,12 @@ HomeWindow::HomeWindow(QWidget *parent)
     suggestionModel->select();
     ui->tableSuggestion->setModel(suggestionModel);
     ui->tableSuggestion->hideColumn(0);
+    m_speech = new QTextToSpeech(this);
+//    m_speech->setVolume(80.0);
+//    m_speech->setRate(10.0);
+//    m_speech->setPitch(10.0);
+//    m_speech->say("The word is QtTextToSpeech");
+
 }
 
 HomeWindow::~HomeWindow()
@@ -61,39 +68,53 @@ void HomeWindow::on_wordSearch_editingFinished()
     model->select();
 
     ui->meaningEt->setText(model->index(0,1).data().toString());
-    ui->antoEt->setText(model->index(0,4).data().toString());
-    ui->definEt->setText(model->index(0,5).data().toString());
+    ui->antoEt->setText(model->index(0,4).data().toString().replace("[", "").replace("]", "").replace('"', "").replace(',', ", ").toLower());
+    ui->definEt->setText("- "+model->index(0,5).data().toString().replace("[", "").replace("]", "").replace('"', "").replace(".", "\n").replace(",", "- "));
     ui->exampleEt->setText(model->index(0,6).data().toString());
 
     QSqlTableModel *extraModel=new QSqlTableModel();
-    QString tt= "[[3,8,9],[2,10],[4,11]]";
+    extraModel->setTable("bn_en");
 
     QJsonDocument doc = QJsonDocument::fromJson(model->index(0,2).data().toString().toUtf8());
     QJsonArray obj = doc.array();
+    QString samePos;
     QString qq = "";
+    QList<QString> typeSerial;
+    QSqlTableModel *typeModel=new QSqlTableModel();
+    typeModel->setTable("types");
+    typeModel->select();
     for(QJsonValueRef s : obj) {
-        int id = s.toArray().at(0).toInt();
-        QString type = "Noun";
-        extraModel->setTable("bn_en");
-        for (int i=1;i<s.toArray().count();i++) {
+        QString type = typeModel->index(s.toArray().at(0).toInt()-1, 1).data().toString();
+        for (int i=0;i<s.toArray().count();i++) {
             double j = s.toArray()[i].toDouble();
-            qq.append( ","+QString::number(j));
+            if (i==0){
+                if(type=="MORE"){
+                    samePos = "SYNONYM";
+                }else {
+                    samePos = type;
+                }
+            }else {
+                typeSerial.append(samePos);
+                qq.append( ","+QString::number(j));
+            }
         }
     }
-    qDebug()<<qq;
-
     extraModel->setFilter("serial IN ("+qq.remove(0,1)+")");
     extraModel->select();
-    ui->posTable->setModel(extraModel);
-    ui->posTable->hideColumn(0);
+    QStandardItemModel *posModel = new QStandardItemModel(this);
+    QList<QStandardItem *> items;
 
-//    qDebug()<<extraModel->index(0,2).data().toString();
-
-//    qDebug() << obj[0].toArray()[0];
-//    qDebug()<<ex;
-
-//    ui->synoEt->setText(model->index(0,2).data().toString());
-//    ui->posEt->setText(model->index(0,2).data().toString());
+    for (int i=0;i<extraModel->rowCount();i++) {
+        items.clear();
+        posModel->setColumnCount(3);
+        items.append(new QStandardItem(typeSerial[i]));
+        items.append(new QStandardItem(extraModel->index(i,1).data().toString()));
+        items.append(new QStandardItem(extraModel->index(i,2).data().toString()));
+        posModel->appendRow(items);
+    }
+    ui->posTable->setModel(posModel);
+    ui->posTable->horizontalHeader()->setSectionResizeMode(QHeaderView::ResizeToContents);
+//    ui->posTable->setColumnWidth(0, 60);
 }
 
 
@@ -169,4 +190,9 @@ void HomeWindow::on_clearBtn_clicked()
         widget->clear();
     }
     ui->wordSearch->setText("");
+}
+
+void HomeWindow::on_speakBtn_clicked()
+{
+    m_speech->say("is, "+ui->wordSearch->text());
 }

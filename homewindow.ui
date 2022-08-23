@@ -47,9 +47,9 @@ background-image: url(:/assets/Gradient-Abstract-Shapes-Background-Purple.jpg);
    <widget class="QPushButton" name="searchBtn">
     <property name="geometry">
      <rect>
-      <x>470</x>
+      <x>410</x>
       <y>10</y>
-      <width>111</width>
+      <width>101</width>
       <height>32</height>
      </rect>
     </property>
@@ -111,9 +111,9 @@ QPushButton:pressed {
    <widget class="QPushButton" name="pastBtn">
     <property name="geometry">
      <rect>
-      <x>590</x>
+      <x>630</x>
       <y>10</y>
-      <width>121</width>
+      <width>101</width>
       <height>32</height>
      </rect>
     </property>
@@ -176,7 +176,7 @@ QPushButton:pressed {
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>451</width>
+      <width>391</width>
       <height>32</height>
      </rect>
     </property>
@@ -225,9 +225,9 @@ radius: 1.35, stop: 0 #fff, stop: 1 #e7e7e7);
    <widget class="QPushButton" name="clearBtn">
     <property name="geometry">
      <rect>
-      <x>720</x>
+      <x>740</x>
       <y>10</y>
-      <width>121</width>
+      <width>101</width>
       <height>32</height>
      </rect>
     </property>
@@ -640,7 +640,7 @@ border: 1px solid #7C4DFF;
 border-radius: 15px;</string>
     </property>
     <property name="title">
-     <string>Part of Speach</string>
+     <string>Synonym and Part of Speach</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -703,7 +703,7 @@ border-radius: 15px;</string>
         <number>16</number>
        </property>
        <property name="editTriggers">
-        <set>QAbstractItemView::NoEditTriggers</set>
+        <set>QAbstractItemView::DoubleClicked</set>
        </property>
        <property name="showDropIndicator" stdset="0">
         <bool>false</bool>
@@ -733,10 +733,10 @@ border-radius: 15px;</string>
         <bool>true</bool>
        </attribute>
        <attribute name="horizontalHeaderMinimumSectionSize">
-        <number>200</number>
+        <number>100</number>
        </attribute>
        <attribute name="horizontalHeaderDefaultSectionSize">
-        <number>300</number>
+        <number>200</number>
        </attribute>
        <attribute name="horizontalHeaderHighlightSections">
         <bool>false</bool>
@@ -834,6 +834,70 @@ p, li { white-space: pre-wrap; }
       </widget>
      </item>
     </layout>
+   </widget>
+   <widget class="QPushButton" name="speakBtn">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>10</y>
+      <width>101</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Kalpurush</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QPushButton{
+
+border: 1px solid #7C4DFF;
+border-radius: 15px;
+padding: 0px;
+background: qradialgradient(cx: 0.3, cy: -0.4,
+fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 #fff, stop: 1 #fff);
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(x1: 40, y1: 50, x2: 50, y2: 50,
+                                      stop: 0 #dadbde, stop: 1 #f6f7fa);
+}</string>
+    </property>
+    <property name="text">
+     <string>Speak</string>
+    </property>
+    <property name="icon">
+     <iconset resource="icons.qrc">
+      <normaloff>:/assets/icons8_voice_80px.png</normaloff>:/assets/icons8_voice_80px.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">

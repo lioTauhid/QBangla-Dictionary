@@ -1,6 +1,6 @@
 #ifndef HOMEWINDOW_H
 #define HOMEWINDOW_H
-
+#include <QTextToSpeech>
 #include <QMainWindow>
 
 QT_BEGIN_NAMESPACE
@@ -38,7 +38,10 @@ private slots:
 
     void on_tableSuggestion_clicked(const QModelIndex &index);
 
+    void on_speakBtn_clicked();
+
 private:
     Ui::HomeWindow *ui;
+    QTextToSpeech *m_speech;
 };
 #endif // HOMEWINDOW_H
