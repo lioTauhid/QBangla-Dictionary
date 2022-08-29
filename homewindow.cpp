@@ -2,16 +2,15 @@
 #include "db_connetion.h"
 #include "QInputDialog"
 #include <QSettings>
-#include <QSqlRelationalTableModel>
 #include <homewindow.h>
 #include <QDesktopServices>
 #include <aboutdialog.h>
 #include <QMimeData>
 #include <QClipboard>
-#include <QDebug>
 #include <QJsonDocument>
 #include <QJsonArray>
 #include <QStandardItemModel>
+#include <QSqlTableModel>
 
 
 QSqlTableModel* suggestionModel;
@@ -57,11 +56,11 @@ void HomeWindow::on_wordSearch_textEdited(const QString &arg1)
 
 void HomeWindow::on_wordSearch_editingFinished()
 {
-    QSqlTableModel *model=new QSqlTableModel();
     QString word = ui->wordSearch->text();
     if (word.isEmpty()){
         return;
     }
+    QSqlTableModel *model=new QSqlTableModel();
 
     model->setTable("bangla");
     model->setFilter("serial IN (SELECT serial FROM english WHERE word LIKE '"+word+"')");
@@ -109,12 +108,14 @@ void HomeWindow::on_wordSearch_editingFinished()
         posModel->setColumnCount(3);
         items.append(new QStandardItem(typeSerial[i]));
         items.append(new QStandardItem(extraModel->index(i,1).data().toString()));
-        items.append(new QStandardItem(extraModel->index(i,2).data().toString()));
+        items.append(new QStandardItem(extraModel->index(i,2).data().toString().replace("[", "").replace("]", "").replace('"', "").replace(',', ", ").toLower()));
         posModel->appendRow(items);
     }
     ui->posTable->setModel(posModel);
-    ui->posTable->horizontalHeader()->setSectionResizeMode(QHeaderView::ResizeToContents);
-//    ui->posTable->setColumnWidth(0, 60);
+//    ui->posTable->horizontalHeader()->setSectionResizeMode(QHeaderView::ResizeToContents);
+    ui->posTable->setColumnWidth(0, (ui->posTable->width()*20)/100);
+    ui->posTable->setColumnWidth(1, (ui->posTable->width()*30)/100);
+    ui->posTable->setColumnWidth(2, (ui->posTable->width()*50)/100);
 }
 
 
@@ -194,5 +195,5 @@ void HomeWindow::on_clearBtn_clicked()
 
 void HomeWindow::on_speakBtn_clicked()
 {
-    m_speech->say("is, "+ui->wordSearch->text());
+    m_speech->say(" ,"+ui->wordSearch->text());
 }
