@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
-Name=BijoyEkush Bangla Dictionary
-Comment=BijoyEkush Dictionary (বিজয় একুশ ডিকশনারী) is a cross-platform bangle dictionary that provides many features
-Exec=BijoyEkush
+Name=QBangla Dictionary
+Comment=QBangla Dictionary (কিউ বাংলা ডিকশনারী) is a cross-platform bangle dictionary that built on top of Qt
+Exec=QBangla
 Icon=logo
 
