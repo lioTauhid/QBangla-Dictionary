@@ -7,7 +7,7 @@
   <br>
 </h1>
 
-<h4 align="center">QBangla Dictionary (বিজয় একুশ ডিকশনারী) is a cross-platform bangle dictionary that built on top of <a href="https://www.qt.io/" target="_blank">Qt</a>.</h4>
+<h4 align="center">QBangla Dictionary (কিউ বাংলা ডিকশনারী) is a cross-platform bangle dictionary that built on top of <a href="https://www.qt.io/" target="_blank">Qt</a>.</h4>
 <div align="center">
 <a href="https://github.com/lioTauhid/BijoyEkush-Bangla-Dictionary/stargazers"><img src="https://img.shields.io/github/stars/lioTauhid/BijoyEkush-Bangla-Dictionary" alt="Stars Badge"/></a>
 <a href="https://github.com/lioTauhid/BijoyEkush-Bangla-Dictionary/network/members"><img src="https://img.shields.io/github/forks/lioTauhid/BijoyEkush-Bangla-Dictionary" alt="Forks Badge"/></a>
@@ -57,12 +57,12 @@ $ git clone https://github.com/lioTauhid/BijoyEkush-Bangla-Dictionary
 
 ## Download
 
-You can [Download](https://github.com/lioTauhid/BijoyEkush-Bangla-Dictionary/releases) the latest installable version of BijoyEkush for Windows and Linux.\
-For Android, download it from [Play Store](https://play.google.com/store/apps/details?id=lio.tauhid.bijoyekush)
+You can [Download](https://github.com/lioTauhid/BijoyEkush-Bangla-Dictionary/releases) the latest installable version of QBangla Dictionary for Windows and Linux.\
+For Android, download it from [Google Play Store](https://play.google.com/store/apps/details?id=lio.tauhid.bijoyekush)
 
 ## Emailware
 
-BijoyEkush is an [emailware](https://en.wiktionary.org/wiki/emailware). Meaning, if you liked using this app or it has helped you in any way, I'd like you send me an email at <liotauhid@gmail.com> about anything you'd want to say about this software. I'd really appreciate it!
+QBangla Dictionary is an [emailware](https://en.wiktionary.org/wiki/emailware). Meaning, if you liked using this app or it has helped you in any way, I'd like you send me an email at <liotauhid@gmail.com> about anything you'd want to say about this software. I'd really appreciate it!
 
 ## Credits
 
