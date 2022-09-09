@@ -52,7 +52,7 @@ From your command line:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/lioTauhid/BijoyEkush-Bangla-Dictionary
+$ git clone https://github.com/lioTauhid/QBangla-Dictionary
 ```
 
 ## Download
