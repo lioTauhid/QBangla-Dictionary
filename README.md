@@ -1,7 +1,7 @@
 
 <h1 align="center">
   <br>
-  <a><img src="https://raw.githubusercontent.com/lioTauhid/BijoyEkush-Bangla-Dictionary/main/external_assets/logo.png" alt="Markdownify" width="200"></a>
+  <a><img src="https://raw.githubusercontent.com/lioTauhid/QBangla-Dictionary/main/external_assets/logo.png" alt="Markdownify" width="200"></a>
   <br>
   QBangla Dictionary
   <br>
@@ -9,12 +9,12 @@
 
 <h4 align="center">QBangla Dictionary (কিউ বাংলা ডিকশনারী) is a cross-platform bangle dictionary that built on top of <a href="https://www.qt.io/" target="_blank">Qt</a>.</h4>
 <div align="center">
-<a href="https://github.com/lioTauhid/BijoyEkush-Bangla-Dictionary/stargazers"><img src="https://img.shields.io/github/stars/lioTauhid/BijoyEkush-Bangla-Dictionary" alt="Stars Badge"/></a>
-<a href="https://github.com/lioTauhid/BijoyEkush-Bangla-Dictionary/network/members"><img src="https://img.shields.io/github/forks/lioTauhid/BijoyEkush-Bangla-Dictionary" alt="Forks Badge"/></a>
-<a href="https://github.com/lioTauhid/BijoyEkush-Bangla-Dictionary/pulls"><img src="https://img.shields.io/github/issues-pr/lioTauhid/BijoyEkush-Bangla-Dictionary" alt="Pull Requests Badge"/></a>
-<a href="https://github.com/lioTauhid/BijoyEkush-Bangla-Dictionary/issues"><img src="https://img.shields.io/github/issues/lioTauhid/BijoyEkush-Bangla-Dictionary" alt="Issues Badge"/></a>
-<a href="https://github.com/lioTauhid/BijoyEkush-Bangla-Dictionary/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/lioTauhid/BijoyEkush-Bangla-Dictionary?color=2b9348"></a>
-<a href="https://github.com/lioTauhid/BijoyEkush-Bangla-Dictionary/blob/master/LICENSE"><img src="https://img.shields.io/github/license/lioTauhid/BijoyEkush-Bangla-Dictionary?color=2b9348" alt="License Badge"/></a>
+<a href="https://github.com/lioTauhid/QBangla-Dictionary/stargazers"><img src="https://img.shields.io/github/stars/lioTauhid/QBangla-Dictionary" alt="Stars Badge"/></a>
+<a href="https://github.com/lioTauhid/QBangla-Dictionary/network/members"><img src="https://img.shields.io/github/forks/lioTauhid/QBangla-Dictionary" alt="Forks Badge"/></a>
+<a href="https://github.com/lioTauhid/QBangla-Dictionary/pulls"><img src="https://img.shields.io/github/issues-pr/lioTauhid/QBangla-Dictionary" alt="Pull Requests Badge"/></a>
+<a href="https://github.com/lioTauhid/QBangla-Dictionary/issues"><img src="https://img.shields.io/github/issues/lioTauhid/QBangla-Dictionary" alt="Issues Badge"/></a>
+<a href="https://github.com/lioTauhid/QBangla-Dictionary/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/lioTauhid/QBangla-Dictionary?color=2b9348"></a>
+<a href="https://github.com/lioTauhid/QBangla-Dictionary/blob/master/LICENSE"><img src="https://img.shields.io/github/license/lioTauhid/QBangla-Dictionary?color=2b9348" alt="License Badge"/></a>
 </div>
 <p align="center">
   <a href="#key-features">Key Features</a> •
@@ -26,7 +26,7 @@
 </p>
 <h1 align="center">
   <br>
-  <a><img src="https://raw.githubusercontent.com/lioTauhid/BijoyEkush-Bangla-Dictionary/main/external_assets/Screenshot.png"></a>
+  <a><img src="https://raw.githubusercontent.com/lioTauhid/QBangla-Dictionary/main/external_assets/Screenshot.png"></a>
   <br>
   <br>
 </h1>
@@ -57,7 +57,7 @@ $ git clone https://github.com/lioTauhid/BijoyEkush-Bangla-Dictionary
 
 ## Download
 
-You can [Download](https://github.com/lioTauhid/BijoyEkush-Bangla-Dictionary/releases) the latest installable version of QBangla Dictionary for Windows and Linux.\
+You can [Download](https://github.com/lioTauhid/QBangla-Dictionary/releases) the latest installable version of QBangla Dictionary for Windows and Linux.\
 For Android, download it from [Google Play Store](https://play.google.com/store/apps/details?id=lio.tauhid.bijoyekush)
 
 ## Emailware
@@ -76,7 +76,7 @@ This software uses the following package and resources:
 
 ## License
 
-[GPL](https://raw.githubusercontent.com/lioTauhid/BijoyEkush-Bangla-Dictionary/main/LICENSE.txt)
+[GPL](https://raw.githubusercontent.com/lioTauhid/QBangla-Dictionary/main/LICENSE.txt)
 
 ---
 
