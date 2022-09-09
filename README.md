@@ -36,7 +36,7 @@
 * Completely Offline
 * Large word based but lite
 * Change Theme and Language
-* Text to Speech (Only availabe for Android)
+* Text to Speech (Experimental)
 * Dark/Light theme
 * Cross platform
   - Windows.
