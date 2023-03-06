@@ -14,38 +14,50 @@
 
 
 QSqlTableModel* suggestionModel;
+QClipboard *clipboard;
 
 HomeWindow::HomeWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::HomeWindow)
 {
-    ui->setupUi(this);
-    QSettings setting;
-    QString color=setting.value("themColor").toString();
-    if(color!=""){
-        if(color!="Default"){
-            this->setStyleSheet("color:#0000fff;");
-            ui->centralwidget->setStyleSheet("background-color: '"+color+"';");
-        }
+  ui->setupUi(this);
+  QSettings setting;
+  QString color = setting.value("themColor").toString();
+    if (color == "White") {
+        this->setStyleSheet("background-color: '"+color+"'; color: blue;");
+        ui->centralwidget->setStyleSheet("background-color: '" + color + "'; color: blue;");
+    } else if (color == "Dark") {
+        this->setStyleSheet("background-color: '"+color+"'; color: white");
+        ui->centralwidget->setStyleSheet("background-color: '" + color + "'; color: white");
+    } else if (color == "Pink") {
+        this->setStyleSheet("background-color: '"+color+"'; color:blue;");
+        ui->centralwidget->setStyleSheet("background-color: '" + color + "'; color: blue;");
     }
-    createConnection();
+  createConnection();
 
-    suggestionModel= new QSqlTableModel();
-    suggestionModel->setTable("english");
-    suggestionModel->select();
-    ui->tableSuggestion->setModel(suggestionModel);
-    ui->tableSuggestion->hideColumn(0);
-    m_speech = new QTextToSpeech(this);
-//    m_speech->setVolume(80.0);
-//    m_speech->setRate(10.0);
-//    m_speech->setPitch(10.0);
-//    m_speech->say("The word is QtTextToSpeech");
+  suggestionModel = new QSqlTableModel();
+  suggestionModel->setTable("english");
+  suggestionModel->select();
+  ui->tableSuggestion->setModel(suggestionModel);
+  ui->tableSuggestion->hideColumn(0);
+  m_speech = new QTextToSpeech(this);
+  //    m_speech->setVolume(80.0);
+  //    m_speech->setRate(10.0);
+  //    m_speech->setPitch(10.0);
+  //    m_speech->say("The word is QtTextToSpeech");
 
+  clipboard = QApplication::clipboard();
+  connect(clipboard,SIGNAL(dataChanged()), SLOT(clip_data_changed()));
 }
 
 HomeWindow::~HomeWindow()
 {
     delete ui;
+}
+
+void HomeWindow::clip_data_changed()
+{
+    on_pastBtn_clicked();
 }
 
 
@@ -133,11 +145,19 @@ void HomeWindow::on_actionThem_triggered()
     QString color = QInputDialog::getItem(NULL, tr("Choose Theme"), tr("Theme:"), thems);
     QSettings setting;
     setting.setValue("themColor", color);
-    if(color!="Default"){
-        ui->centralwidget->setStyleSheet("background-color: '"+color+"';");
-        return;
-    }
-    ui->centralwidget->setStyleSheet("background-image: url(:/Gradient-Abstract-Shapes-Background-Purple.jpg);");
+      if (color == "White") {
+          this->setStyleSheet("background-color: '"+color+"'; color: blue;");
+          ui->centralwidget->setStyleSheet("background-color: '" + color + "'; color: blue;");
+      } else if (color == "Dark") {
+          this->setStyleSheet("background-color: '"+color+"'; color: white");
+          ui->centralwidget->setStyleSheet("background-color: '" + color + "'; color: white");
+      } else if (color == "Pink") {
+          this->setStyleSheet("background-color: '"+color+"'; color:blue;");
+          ui->centralwidget->setStyleSheet("background-color: '" + color + "'; color: blue;");
+      } else {
+          this->setStyleSheet(" ");
+          ui->centralwidget->setStyleSheet("color:#0000ff; background-image: url(:/assets/Gradient-Abstract-Shapes-Background-Purple.jpg);");
+      }
 }
 
 
@@ -173,9 +193,8 @@ void HomeWindow::on_actionExit_triggered()
 
 void HomeWindow::on_pastBtn_clicked()
 {
-    const QClipboard *clipboard = QApplication::clipboard();
-    const QMimeData *mimeData = clipboard->mimeData();
-    ui->wordSearch->setText(mimeData->text());
+    ui->wordSearch->setText(clipboard->mimeData()->text());
+    on_wordSearch_editingFinished();
 }
 
 
@@ -191,9 +210,16 @@ void HomeWindow::on_clearBtn_clicked()
         widget->clear();
     }
     ui->wordSearch->setText("");
+    ui->posTable->setModel(NULL);
 }
 
 void HomeWindow::on_speakBtn_clicked()
 {
-    m_speech->say(" ,"+ui->wordSearch->text());
+//    m_speech->say(" ,"+ui->wordSearch->text());
+    m_speech->say(ui->wordSearch->text());
+
 }
+
+
+
+

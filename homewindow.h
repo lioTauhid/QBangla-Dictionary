@@ -1,5 +1,6 @@
 #ifndef HOMEWINDOW_H
 #define HOMEWINDOW_H
+#include "ui_homewindow.h"
 #include <QTextToSpeech>
 #include <QMainWindow>
 
@@ -39,6 +40,8 @@ private slots:
     void on_tableSuggestion_clicked(const QModelIndex &index);
 
     void on_speakBtn_clicked();
+
+    void clip_data_changed();
 
 private:
     Ui::HomeWindow *ui;

@@ -52,27 +52,27 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>HomeWindow</name>
     <message>
-        <location filename="homewindow.ui" line="32"/>
+        <location filename="homewindow.ui" line="38"/>
         <source>QBangla Dictionary</source>
         <translation>কিউ বাংলা ডিকশনারী</translation>
     </message>
     <message>
-        <location filename="homewindow.ui" line="98"/>
+        <location filename="homewindow.ui" line="104"/>
         <source>Search</source>
         <translation>অনুসন্ধান</translation>
     </message>
     <message>
-        <location filename="homewindow.ui" line="161"/>
+        <location filename="homewindow.ui" line="167"/>
         <source>Past</source>
         <translation>পেস্ট</translation>
     </message>
     <message>
-        <location filename="homewindow.ui" line="219"/>
+        <location filename="homewindow.ui" line="225"/>
         <source>Type word or phase here</source>
         <translation>এখানে টাইপ করে অনুসন্ধান করুন</translation>
     </message>
     <message>
-        <location filename="homewindow.ui" line="275"/>
+        <location filename="homewindow.ui" line="281"/>
         <source>Clear</source>
         <translation>মুছুন</translation>
     </message>
@@ -85,22 +85,22 @@ p, li { white-space: pre-wrap; }
         <translation type="vanished">সমার্থক শব্দ</translation>
     </message>
     <message>
-        <location filename="homewindow.ui" line="789"/>
+        <location filename="homewindow.ui" line="795"/>
         <source>Antonym</source>
         <translation>বিপরীত শব্দ</translation>
     </message>
     <message>
-        <location filename="homewindow.ui" line="568"/>
+        <location filename="homewindow.ui" line="574"/>
         <source>Example</source>
         <translation>উদাহরণ</translation>
     </message>
     <message>
-        <location filename="homewindow.ui" line="417"/>
+        <location filename="homewindow.ui" line="423"/>
         <source>Meaning</source>
         <translation>অর্থ</translation>
     </message>
     <message>
-        <location filename="homewindow.ui" line="457"/>
+        <location filename="homewindow.ui" line="463"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
@@ -109,14 +109,14 @@ p, li { white-space: pre-wrap; }
         <translation></translation>
     </message>
     <message>
-        <location filename="homewindow.ui" line="493"/>
+        <location filename="homewindow.ui" line="499"/>
         <source>Definitions</source>
         <translation>সংজ্ঞা</translation>
     </message>
     <message>
-        <location filename="homewindow.ui" line="532"/>
-        <location filename="homewindow.ui" line="607"/>
-        <location filename="homewindow.ui" line="828"/>
+        <location filename="homewindow.ui" line="538"/>
+        <location filename="homewindow.ui" line="613"/>
+        <location filename="homewindow.ui" line="834"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
@@ -130,48 +130,48 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="homewindow.ui" line="643"/>
+        <location filename="homewindow.ui" line="649"/>
         <source>Synonym and Part of Speach</source>
         <translation>সমার্থক শব্দ এবং বাক্যের অংশ</translation>
     </message>
     <message>
-        <location filename="homewindow.ui" line="889"/>
+        <location filename="homewindow.ui" line="895"/>
         <source>Speak</source>
         <translation>স্পিক</translation>
     </message>
     <message>
-        <location filename="homewindow.ui" line="914"/>
+        <location filename="homewindow.ui" line="920"/>
         <source>Menu</source>
         <translation>মেনু</translation>
     </message>
     <message>
-        <location filename="homewindow.ui" line="931"/>
+        <location filename="homewindow.ui" line="937"/>
         <source>toolBar</source>
         <translation>টুলবার</translation>
     </message>
     <message>
-        <location filename="homewindow.ui" line="953"/>
+        <location filename="homewindow.ui" line="959"/>
         <source>Exit</source>
         <translation>প্রস্থান</translation>
     </message>
     <message>
-        <location filename="homewindow.ui" line="967"/>
+        <location filename="homewindow.ui" line="973"/>
         <source>Theme</source>
         <translation>থিম</translation>
     </message>
     <message>
-        <location filename="homewindow.ui" line="981"/>
+        <location filename="homewindow.ui" line="987"/>
         <source>Language</source>
         <translation>ভাষা</translation>
     </message>
     <message>
-        <location filename="homewindow.ui" line="995"/>
+        <location filename="homewindow.ui" line="1001"/>
         <source>About Us</source>
         <oldsource>About</oldsource>
         <translation>আমাদের সম্পর্কে</translation>
     </message>
     <message>
-        <location filename="homewindow.ui" line="1009"/>
+        <location filename="homewindow.ui" line="1015"/>
         <source>Install Font</source>
         <oldsource>Font install</oldsource>
         <translation>ফন্ট ইনস্টল করুন</translation>

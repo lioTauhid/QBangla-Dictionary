@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
     QApplication::setApplicationName("QBangla Dictionary");
     QApplication::setOrganizationDomain("liotauhid@gmail.com");
     QApplication::setOrganizationName("QBangla");
-    QApplication::setApplicationVersion("2.1.0");
+    QApplication::setApplicationVersion("3.0.0");
     QApplication a(argc, argv);
 
     QTranslator t;
