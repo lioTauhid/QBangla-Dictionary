@@ -38,6 +38,7 @@
 * Change Theme and Language
 * Text to Speech
 * Dark/Light theme
+* Auto Clipboard(Copy) listen
 * Cross platform
   - Windows.
   - Linux.
