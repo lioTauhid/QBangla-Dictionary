@@ -36,7 +36,7 @@
 * Completely Offline
 * Large word based but lite
 * Change Theme and Language
-* Text to Speech (Experimental)
+* Text to Speech
 * Dark/Light theme
 * Cross platform
   - Windows.
@@ -73,6 +73,7 @@ This software uses the following package and resources:
 - [Sqlite](https://www.sqlite.org/index.html)
 - [DB browser](https://sqlitebrowser.org/)
 - [Icon8](https://icons8.com/)
+- [Inno Setup](https://jrsoftware.org/isinfo.php)
 
 ## License
 
