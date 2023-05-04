@@ -35,7 +35,7 @@
 
 * Completely Offline
 * Large word based but lite
-* Change Theme and Language
+* Choose Theme and Language
 * Text to Speech
 * Dark/Light theme
 * Auto Clipboard(Copy) listen
