@@ -7,7 +7,7 @@
   <br>
 </h1>
 
-<h4 align="center">QBangla Dictionary (কিউ বাংলা ডিকশনারী) is a cross-platform bangle dictionary that built on top of <a href="https://www.qt.io/" target="_blank">Qt</a>.</h4>
+<h4 align="center">QBangla Dictionary (কিউ বাংলা ডিকশনারী) is a cross-platform bengali dictionary that built on top of <a href="https://www.qt.io/" target="_blank">Qt</a>.</h4>
 <div align="center">
 <a href="https://github.com/lioTauhid/QBangla-Dictionary/stargazers"><img src="https://img.shields.io/github/stars/lioTauhid/QBangla-Dictionary" alt="Stars Badge"/></a>
 <a href="https://github.com/lioTauhid/QBangla-Dictionary/network/members"><img src="https://img.shields.io/github/forks/lioTauhid/QBangla-Dictionary" alt="Forks Badge"/></a>
